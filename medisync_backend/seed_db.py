@@ -10,7 +10,6 @@ django.setup()
 
 def seed_raw_sql():
     print("Connecting to sqlite database directly...")
-    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
     db_path = os.path.join(BASE_DIR, 'db.sqlite3')
     
     conn = sqlite3.connect(db_path)
