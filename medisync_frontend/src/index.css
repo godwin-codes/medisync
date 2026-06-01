@@ -1,0 +1,34 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@theme {
+  --color-medical-blue-50: #eff6ff;
+  --color-medical-blue-100: #dbeafe;
+  --color-medical-blue-200: #bfdbfe;
+  --color-medical-blue-300: #93c5fd;
+  --color-medical-blue-400: #60a5fa;
+  --color-medical-blue-500: #3b82f6;
+  --color-medical-blue-600: #2563eb;
+  --color-medical-blue-700: #1d4ed8;
+  --color-medical-blue-800: #1e40af;
+  --color-medical-blue-900: #1e3a8a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8fafc;
+  color: #1e293b;
+}
+
+/* Smooth scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #f1f5f9; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
