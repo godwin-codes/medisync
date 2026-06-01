@@ -3,13 +3,15 @@ import django
 import sys
 import sqlite3
 
-sys.path.append('C:\\Users\\GODWIN K BENNY\\OneDrive\\Desktop\\scratch\\medisync_backend')
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(BASE_DIR)
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'medisync_backend.settings')
 django.setup()
 
 def seed_raw_sql():
     print("Connecting to sqlite database directly...")
-    db_path = 'C:\\Users\\GODWIN K BENNY\\OneDrive\\Desktop\\scratch\\medisync_backend\\db.sqlite3'
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    db_path = os.path.join(BASE_DIR, 'db.sqlite3')
     
     conn = sqlite3.connect(db_path)
     cur = conn.cursor()

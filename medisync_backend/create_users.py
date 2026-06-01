@@ -2,7 +2,8 @@ import os
 import django
 import sys
 
-sys.path.append('C:\\Users\\GODWIN K BENNY\\OneDrive\\Desktop\\scratch\\medisync_backend')
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(BASE_DIR)
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'medisync_backend.settings')
 django.setup()
 
